@@ -1,0 +1,99 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+}
+
+.box_container .box {
+  width: 70px;
+  height: 70px;
+  background-color: var(--orange);
+  margin: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.box_container .picked {
+  background-color: var(--green);
+}
+
+.box_container .bingo {
+  background-color: var(--cyan);
+}
+
+.cbtn {
+	margin: .3125em;
+	padding: .3em .625em;
+	box-shadow: none;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.cbtn:not([disabled]) {
+	cursor: pointer;
+}
+
+.cbtn.blue {
+	border: 0;
+	border-radius: .25em;
+	background: initial;
+	background-color: #3085d6;
+	color: #fff;
+	font-size: 1.0625em;
+}
+
+.cbtn.red {
+	border: 0;
+	border-radius: .25em;
+	background: initial;
+	background-color: #dd6b55;
+	color: #fff;
+	font-size: 1.0625em;
+}
+
+.cbtn.cancel {
+	border: 0;
+	border-radius: .25em;
+	background: initial;
+	background-color: #aaa;
+	color: #fff;
+	font-size: 1.0625em;
+}
+
+.cbtn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, .4);
+}
+
+.cbtn:hover {
+    text-decoration: none;
+}
+
+.cbtn:disabled {
+	cursor: pointer;
+}
+
+#play_btn:active {
+  transform: scale(1.1, 1.1);
+}
+
+.lang-form {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
